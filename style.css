@@ -25,6 +25,7 @@
   left: 25px;
   background-color: #fff;
   white-space: pre-wrap;
+  box-sizing: content-box;
   width: 85%;
   -webkit-smoothing: antialiased;
   border: 10px solid #fff;
@@ -51,6 +52,7 @@
   background-color: rgba(0,0,0,0.5);
   -webkit-transform-style: preserve-3d;
   -webkit-transition: opacity 0.25s ease;
+  box-sizing: content-box;
   position: fixed;
   opacity: 0;
   display: none;
@@ -61,6 +63,7 @@
 
 #highlight {
   color: red;
+  box-sizing: content-box;
   -webkit-smoothing: antialiased;
 }
 
@@ -77,6 +80,7 @@
 #thingy {
   left: 172px;
   width: 16px;
+  box-sizing: content-box;
   height: 100%;
   top: 0;
   position: absolute;
