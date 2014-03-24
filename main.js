@@ -132,7 +132,7 @@ var container = {
 var cleanupDone = true;
 var scrubSize = 10;
 var onKeyDown = function(e) {
-  log(e.which);
+  if (e.target.isInput) return false;
   if (!e.modifiers() && e.which === 65) {
     if (!container.active && cleanupDone) {
       container.show();

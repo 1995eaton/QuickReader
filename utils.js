@@ -11,3 +11,11 @@ String.prototype.repeat = function(times) {
   }
   return a.join("");
 }
+
+Object.prototype.isInput = function() {
+  return (
+      (this.nodeName === "TEXTAREA" || this.nodeName === "INPUT") &&
+      !/button|image|checkbox|submit/.test(this.getAttribute("type"))
+  );
+};
+
