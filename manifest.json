@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "SpeedReader",
+  "version": "1.0",
+  "description": "My attempt at creating a Sprit-like clone for Chrome.",
+  "permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js","utils.js"],
+      "css": ["style.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
